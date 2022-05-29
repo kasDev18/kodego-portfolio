@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Macondo&family=Playfair+Display:ital,wght@0,400;1,900&family=Roboto+Slab&family=Zen+Antique&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1f5ccdbc5a.js" crossorigin="anonymous"></script>
+	<title>FooDelivery.com</title>
+</head>
+<style>
+    *{
+		font-family: 'Macondo', cursive;
+	}
+    .header_1 {
+        margin-left: 60px;
+    }
+    .header_1 h5{
+        width: 97px;
+        padding-left: 1px;
+    }
+	header button{
+		margin: 50px 0 0 40px;
+	}
+    .container_header {
+        background: whitesmoke;
+    }
+	.container_header input{
+		height: 50px;
+	}
+    .container_header .dropdown{
+        left: 60px;
+    }
+	.container_header button{
+		position: absolute;
+		transform: translate(-100px, 4px);
+	}
+	.logo img{
+		width: 115px;
+		height: 100px;
+        padding: 10px;
+        border-radius: 50%;
+	}
+    .dropdown-toggle {
+        height: 50px;
+        margin-top: 43px;
+    }
+    .body_container {
+        height: 1050vh;
+        width: 99.5vw;
+        background: no-repeat url('https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/3966852/1820/1213/m1/fpnw/wm1/mrb5ukgciswv4kmjvovih9fg6fp7hkyadtlrjuneraf8dyioetbpnesixupybiz8-.jpg?1517999454&s=da270c8dc5f7789d7832bff575c4c6f6');
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .navbar_container{
+        height: 79.1vh;
+        width: 15vw;
+        padding-top: 140px;
+        background: no-repeat url('https://st3.depositphotos.com/1558912/19051/i/950/depositphotos_190518758-stock-photo-italian-food-background-on-white.jpg');
+        background-size: cover;
+    }
+    .content_container {
+        padding: 20px;
+        margin: 180px 30px 100px 260px; 
+    }
+    .content_container .row{
+        padding-left: 20px;
+    }
+    .content_container .row .col .card{
+       opacity: .8;
+       margin-top: 20px;
+    }
+    .content_container .row .col .card:hover{
+        border: 2px solid red;
+        transition: .1s;
+        opacity: 1;
+        cursor: pointer;
+    }
+    .content_container .welcome  {
+    transition: 0.5s;
+    animation: animate 3s linear infinite;  
+    animation-delay: 2s;
+    font-weight: 900;
+    }
+    @keyframes animate {
+    0%,
+    18%,
+    20%,
+    50.1%,
+    60.1%,
+    65.1%,
+    80%,
+    90.1%,
+    92% {
+        color: transparent;
+        text-shadow: none;
+    }
+    18.1%,
+    20.1%,
+    50%,
+    60%,
+    65%,
+    80.1%,
+    90%,
+    92.1%,
+    100% {
+        color: black;
+        text-shadow: 0 0 3px whitesmoke, 0 0 20px whitesmoke, 0 0 40px whitesmoke,
+        0 0 80px whitesmoke, 0 0 160px whitesmoke;
+    }
+    }
+    .content_container_bundle_img_logo {
+        position: relative;
+        bottom: 370px;
+        left: 252px;
+        border-radius: 50%;
+        opacity: .9;
+    }
+    .Pizza_container img {
+        width: 250px;
+        height: 200px;
+    }
+</style>
+<body>
+    <div>
+        <div class="row container_header shadow shadow-sm fixed-top pt-0">
+            <div class="col position-sticky">
+                <header class="container d-flex">
+					<div class="row mt-1 header_1">
+						<span class="logo"><img src="https://thumbs.dreamstime.com/b/food-delivery-icon-flat-minimal-vector-illustration-web-print-68283559.jpg" alt=""></span>
+						<div><h5 class="text-decoration-underline mx-2 bg-light">FooDelivery</h5></div>
+					</div>
+					<input type="text" name="" id="" class="form-control mt-5 m-2" placeholder="Search for Food...">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li class="d-flex">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-truck"> Delivery</i>
+                                </a>
+                            </li>
+                            <blockquote class="text-success px-2" style="font-size: xx-small;">*Minimum of 2 Orders except Bundle</blockquote>
+                        </ul>
+                    </div>
+					<div>
+						<button class="btn bg-success text-white"><i class="fa-solid fa-magnifying-glass"></i></button>
+					</div>
+				</header>
+            </div>
+        </div>
+        <div class="row body_container">
+            <div class="col navbar_container border border-top-0 border-bottom-0 border-start-0 fixed-bottom">
+                <h5>Filter:</h5>
+                <div class="form-check text-center">
+                    <input class="form-check-input mx-2" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Pizza
+                    </label>
+                </div>
+                <div class="form-check text-center">
+                    <input class="form-check-input mx-2" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Pasta  
+                    </label>
+                </div>
+                <div class="form-check text-center">
+                    <input class="form-check-input mx-2" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Chicken
+                    </label>
+                </div>
+                <div class="form-check text-center">
+                    <input class="form-check-input mx-2" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Desserts
+                    </label>
+                </div>
+                <div class="form-check text-center">
+                    <input class="form-check-input mx-2" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Sides
+                    </label>
+                </div>
+                <div class="form-check text-center">
+                    <input class="form-check-input mx-2" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Bundle
+                    </label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow bg-body rounded content_container">
+                    <h5 class="welcome text-start">Bundle Promo!</h5>
+                    <div class="d-flex justify-content-center text-decoration-underline">
+                        <h6>Bundle 1</h6>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem;">
+                                <div class="col">
+                                    <img src="Bundle_1_img/Pizza_bundle.JPG" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bundle Family Meal</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <strike> ₱1,199.00</strike>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 999.00</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <i class="fa-solid fa-truck"> Free</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem;">
+                                <div class="col">
+                                    <img src="Bundle_1_img/Spaghetti_bundle.jpg" class="card-img-top" alt="..." height="140px">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bundle Spaghetti Meal</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <strike> ₱359.00</strike>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 299.00</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <i class="fa-solid fa-truck"> Free</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem;">
+                                <div class="col">
+                                    <img src="Bundle_1_img/Pizza_barkada_bundle.JPG" class="card-img-top" alt="..." height="140px">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bundle Pizza Meal</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <strike> ₱699.00</strike>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 599.00</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <i class="fa-solid fa-truck"> Free</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="https://thumbs.dreamstime.com/b/food-delivery-icon-flat-minimal-vector-illustration-web-print-68283559.jpg" width="50px" height="50px" class="content_container_bundle_img_logo" alt="">
+                    <div class="d-flex justify-content-center text-decoration-underline">
+                        <h6>Bundle 2</h6>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem;">
+                                <div class="col">
+                                    <img src="Bundle_2_img/Capture1.JPG" class="card-img-top" alt="..." height="140px">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Barkada Meal 1</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <strike> ₱499.00</strike>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 399.00</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <i class="fa-solid fa-truck"> Free</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem;">
+                                <div class="col">
+                                    <img src="Bundle_2_img/Capture2.JPG" class="card-img-top" alt="..." height="140px">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Barkada Meal 2</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <strike> ₱899</strike>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 799.00</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <i class="fa-solid fa-truck"> Free</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem;">
+                                <div class="col">
+                                    <img src="Bundle_2_img/Capture3.JPG" class="card-img-top" alt="..." height="140px">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Barkada Meal 3</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <strike> ₱1,599.00</strike>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 1,499.00</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <i class="fa-solid fa-truck"> Free</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card shadow bg-body rounded content_container Pizza_container">
+                    <h5 class="text-start" style="font-weight: 900;">Pizza</h5>
+                    <div class="d-flex justify-content-center text-decoration-underline">
+                        <h6>Pizza 1</h6>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem; height: 26rem;">
+                                <div class="col">
+                                    <img src="Pizza_1_img/Capture1.JPG" class="card-img-top mx-3" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Spicy Hawaiian Overload</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <i class="fa-solid fa-truck"> ₱25</i>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 122.00</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem; height: 26rem;">
+                                <div class="col">
+                                    <img src="Pizza_1_img/Capture2.JPG" class="card-img-top mx-3" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Spicy All Meat Overload</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <i class="fa-solid fa-truck"> ₱25</i>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 122.00</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem; height: 26rem;">
+                                <div class="col">
+                                    <img src="Pizza_1_img/Capture3.JPG " class="card-img-top p-1 mx-3" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cajun Shrimp Overload</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <i class="fa-solid fa-truck"> ₱25</i>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 133.00</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center text-decoration-underline mt-5">
+                        <h6>Pizza 2</h6>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem; height: 26rem;">
+                                <div class="col">
+                                    <img src="Pizza_1_img/Capture4.JPG" class="card-img-top m-3" alt="...">
+                                    <div class="card-body p-1">
+                                        <h5 class="card-title">Extreme Pepperoni Overload</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <i class="fa-solid fa-truck"> ₱25</i>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 570.00</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem; height: 26rem;">
+                                <div class="col">
+                                    <img src="Pizza_1_img/Capture5.JPG" class="card-img-top m-3" alt="...">
+                                    <div class="card-body  p-1">
+                                        <h5 class="card-title">4 Cheese Overload</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <i class="fa-solid fa-truck"> ₱25</i>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 268.00</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem; height: 26rem;">
+                                <div class="col">
+                                    <img src="Pizza_1_img/Capture6.JPG" class="card-img-top m-3" alt="...">
+                                    <div class="card-body  p-1">
+                                        <h5 class="card-title">Bacon Overload</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <i class="fa-solid fa-truck"> ₱25</i>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 111.00</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card shadow bg-body rounded content_container Pizza_container">
+                    <h5 class="text-start" style="font-weight: 900;">Pasta</h5>
+                    <div class="d-flex justify-content-center text-decoration-underline">
+                        <h6>Pasta 1</h6>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem; height: 26rem;">
+                                <div class="col">
+                                    <img src="Macaroni_1_img/Capture1.JPG" class="card-img-top mx-3" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lasagna Supreme Solo</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <i class="fa-solid fa-truck"> ₱25</i>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 106.00</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem; height: 26rem;">
+                                <div class="col">
+                                    <img src="Macaroni_1_img/Capture2.JPG" class="card-img-top mx-3" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Creamy Bacon Carbonara Solo</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <i class="fa-solid fa-truck"> ₱25</i>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 118.00</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem; height: 26rem;">
+                                <div class="col">
+                                    <img src="Macaroni_1_img/Capture3.JPG" class="card-img-top p-1 mx-3" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Meaty Spaghetti Solo</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <i class="fa-solid fa-truck"> ₱25</i>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 56.00</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center text-decoration-underline mt-5">
+                        <h6>Pasta 2</h6>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem; height: 26rem;">
+                                <div class="col">
+                                    <img src="Macaroni_1_img/Capture4.JPG" class="card-img-top m-3" alt="...">
+                                    <div class="card-body p-1">
+                                        <h5 class="card-title">Lasagna Supreme Pan</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <i class="fa-solid fa-truck"> ₱25</i>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 269.00</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem; height: 26rem;">
+                                <div class="col">
+                                    <img src="Macaroni_1_img/Capture5.JPG" class="card-img-top m-3" alt="...">
+                                    <div class="card-body  p-1">
+                                        <h5 class="card-title">Creamy Bacon Carbonara Pan</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <i class="fa-solid fa-truck"> ₱25</i>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 258.00</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem; height: 26rem;">
+                                <div class="col">
+                                    <img src="Macaroni_1_img/Capture6.JPG" class="card-img-top m-3" alt="...">
+                                    <div class="card-body  p-1">
+                                        <h5 class="card-title">Meaty Spaghetti Pan</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <i class="fa-solid fa-truck"> ₱25</i>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 146.00</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card shadow bg-body rounded content_container Pizza_container">
+                    <h5 class="text-start" style="font-weight: 900;">Chicken Value Meal</h5>
+                    <div class="d-flex justify-content-center text-decoration-underline">
+                        <h6>Chicken Value Meal 1</h6>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem; height: 26rem;">
+                                <div class="col">
+                                    <img src="Chicken_1_img/Capture1.JPG" class="card-img-top mx-3" alt="...">
+                                    <div class="card-body mt-2">
+                                        <h5 class="card-title" style="font-size: 14px; font-weight: 900;">Creamy Shrimp Spaghetti Chicken Combo</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <i class="fa-solid fa-truck"> ₱25</i>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 178.00</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem; height: 26rem;">
+                                <div class="col">
+                                    <img src="Chicken_1_img/Capture2.JPG" class="card-img-top mx-3" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lasagna Chicken Combo</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <i class="fa-solid fa-truck"> ₱25</i>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 174.00</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem; height: 26rem;">
+                                <div class="col">
+                                    <img src="Chicken_1_img/Capture3.JPG" class="card-img-top p-1 mx-3" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Carbonara Chicken Combo</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <i class="fa-solid fa-truck"> ₱25</i>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 174.00</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center text-decoration-underline mt-5">
+                        <h6>Chicken Value Meal 2</h6>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem; height: 26rem;">
+                                <div class="col">
+                                    <img src="Chicken_1_img/Capture4.JPG" class="card-img-top" alt="...">
+                                    <div class="card-body mt-3">
+                                        <h5 class="card-title">Pizza Loaded Combo D</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <i class="fa-solid fa-truck"> ₱25</i>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 162.00</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem; height: 26rem;">
+                                <div class="col">
+                                    <img src="Chicken_1_img/Capture5.JPG" class="card-img-top m-3" alt="...">
+                                    <div class="card-body  p-1">
+                                        <h5 class="card-title">Pizza Loaded Combo E</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <i class="fa-solid fa-truck"> ₱25</i>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 207.00</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem; height: 26rem;">
+                                <div class="col">
+                                    <img src="Chicken_1_img/Capture6.JPG" class="card-img-top m-3" alt="...">
+                                    <div class="card-body  p-1">
+                                        <h5 class="card-title">1 pc Crunchy Chicken with Rice</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <i class="fa-solid fa-truck"> ₱25</i>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 100.00</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem; height: 26rem;">
+                                <div class="col">
+                                    <img src="Chicken_1_img/Capture7.JPG" class="card-img-top mx-3" alt="...">
+                                    <div class="card-body p-1">
+                                        <h5 class="card-title">2 pcs Crunchy Chicken with Rice</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <i class="fa-solid fa-truck"> ₱25</i>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 185.00</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+                <div class="card shadow bg-body rounded content_container Pizza_container">
+                    <h5 class="text-start" style="font-weight: 900;">Desserts</h5>
+                    <div class="d-flex justify-content-center text-decoration-underline">
+                        <h6>Dessert 1</h6>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem; height: 26rem;">
+                                <div class="col">
+                                    <img src="Dessert_1_img/Capture1.JPG" class="card-img-top mx-3" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">UBE HALO-HALO ESPESYAL</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <i class="fa-solid fa-truck"> ₱25</i>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 112.00</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem; height: 26rem;">
+                                <div class="col">
+                                    <img src="Dessert_1_img/Capture2.JPG" class="card-img-top mx-3" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">HALO-HALO ESPESYAL</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <i class="fa-solid fa-truck"> ₱25</i>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 112.00</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem; height: 26rem;">
+                                <div class="col">
+                                    <img src="Dessert_1_img/Capture3.JPG" class="card-img-top mx-3" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="font-size: 19px;">SABA HALO-HALO ESPESYAL</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <i class="fa-solid fa-truck"> ₱25</i>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 112.00</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card shadow bg-body rounded content_container Pizza_container">
+                    <h5 class="text-start" style="font-weight: 900;">Sides</h5>
+                    <div class="d-flex justify-content-center text-decoration-underline">
+                        <h6>Sides 1</h6>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem; height: 26rem;">
+                                <div class="col">
+                                    <img src="Sides_1_img/Capture1.JPG" class="card-img-top mx-3" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Potato Crunchers with Dip</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <i class="fa-solid fa-truck"> ₱25</i>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 56.00</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem; height: 26rem;">
+                                <div class="col">
+                                    <img src="Sides_1_img/Capture2.JPG" class="card-img-top mx-3" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">3pcs. Garlic Sticks with Cheese Dip</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <i class="fa-solid fa-truck"> ₱25</i>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 39.00</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card d-flex col" style="width: 18rem; height: 26rem;">
+                                <div class="col">
+                                    <img src="Sides_1_img/Capture3.JPG" class="card-img-top p-1 mx-3" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">3pcs. Garlic Sticks with Sour Cream Dip</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="d-flex">
+                                            <div class="col">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                            </div>
+                                            <div class="d-flex col justify-content-end">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="col pt-1">
+                                                <i class="fa-solid fa-truck"> ₱25</i>
+                                            </div>
+                                            <div class="pt-2">
+                                                <h6>Starts at ₱ 39.00</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

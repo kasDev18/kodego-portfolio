@@ -1,0 +1,62 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+.fpc-logo_name .cont
+{
+    position: absolute;
+    margin: 8rem 0 0 300px;
+}
+.cont img
+{
+    position: relative;
+    transform: translate(60px, 15px);
+}
+.cont span
+{
+    font-size: 23px;
+    color: black;
+}
+.cont .qa
+{
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    left: 40px;
+    color: green;
+}
+.log
+{
+    width: 30%;
+    position: absolute;
+    top: 10rem;
+    left: 45rem;
+}
+.log .box .title
+{
+    font-family: 'Times New Roman', Times, serif;
+}
+.log .box #username-error 
+{
+    color: red;
+    display: none;
+}
+.log .box #username-error2
+{
+    color: red;
+    display: none;
+}
+.log .box #password-error
+{
+    color: red;
+    display: none;
+}
+.log .box #password-error2
+{
+    color: red;
+    display: none;
+}
+.log .box #error
+{
+    display: none;
+}
